@@ -1,20 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Javascript Calculator</title>
-  <link href="styles.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   <script src="script.js" defer></script>
 </head>
+
 <body>
-  <div class="calculator-grid">
-    <div class="output">
+
+<!-- base of the calculator -->
+  <div class="framework">
+    <div class="answer">
       <div data-previous-operand class="previous-operand"></div>
       <div data-current-operand class="current-operand"></div>
     </div>
-    <button data-all-clear class="span-two">AC</button>
+
+<!-- the buttons have to be in this order for the layout to look right -->
+    <button data-clear class="span-two">CLEAR</button>
     <button data-delete>DEL</button>
     <button data-operation>÷</button>
     <button data-number>1</button>
@@ -32,6 +39,7 @@
     <button data-number>.</button>
     <button data-number>0</button>
     <button data-equals class="span-two">=</button>
+
   </div>
 </body>
 </html>
